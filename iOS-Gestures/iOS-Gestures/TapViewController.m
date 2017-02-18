@@ -10,28 +10,33 @@
 
 @interface TapViewController ()
 
+@property (strong, nonatomic) UIView *myView;
+
 @end
 
 @implementation TapViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    CGFloat width = 100;
+    CGFloat height = 100;
+    
+    CGRect frame = CGRectMake(CGRectGetMidX(self.view.bounds) - width / 2, CGRectGetMidY(self.view.bounds) - height / 2, width, height);
+    
+    self.myView = [[UIView alloc] initWithFrame:frame];
+    
+    self.myView.backgroundColor = [UIColor blueColor];
+    
+    [self.view addSubview:self.myView];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    
+    [self.view addGestureRecognizer:tapGesture];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewTapped:(UIGestureRecognizer *)sender {
+    
+    self.myView.backgroundColor = [self.myView.backgroundColor isEqual: [UIColor blueColor]] ? [UIColor orangeColor] : [UIColor blueColor];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
