@@ -31,7 +31,7 @@
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
     
-    [self.view addGestureRecognizer:tapGesture];
+    [self.myView addGestureRecognizer:tapGesture];
 }
 
 - (void)viewTapped:(UIGestureRecognizer *)sender {
