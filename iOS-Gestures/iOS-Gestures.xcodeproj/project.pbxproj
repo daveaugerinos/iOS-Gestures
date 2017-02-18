@@ -13,6 +13,8 @@
 		A2AEA2011E58D98B00312924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AEA2001E58D98B00312924 /* Assets.xcassets */; };
 		A2AEA2041E58D98B00312924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AEA2021E58D98B00312924 /* LaunchScreen.storyboard */; };
 		A2AEA20F1E58D98B00312924 /* iOS_GesturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AEA20E1E58D98B00312924 /* iOS_GesturesTests.m */; };
+		A2AEA21B1E58DE6B00312924 /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AEA21A1E58DE6B00312924 /* PanViewController.m */; };
+		A2AEA21E1E58DE8700312924 /* TapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AEA21D1E58DE8700312924 /* TapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		A2AEA20A1E58D98B00312924 /* iOS-GesturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-GesturesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AEA20E1E58D98B00312924 /* iOS_GesturesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_GesturesTests.m; sourceTree = "<group>"; };
 		A2AEA2101E58D98B00312924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AEA2191E58DE6B00312924 /* PanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		A2AEA21A1E58DE6B00312924 /* PanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		A2AEA21C1E58DE8700312924 /* TapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapViewController.h; sourceTree = "<group>"; };
+		A2AEA21D1E58DE8700312924 /* TapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 				A2AEA1F71E58D98B00312924 /* AppDelegate.h */,
 				A2AEA1F81E58D98B00312924 /* AppDelegate.m */,
 				A2AEA1FD1E58D98B00312924 /* Main.storyboard */,
+				A2AEA2191E58DE6B00312924 /* PanViewController.h */,
+				A2AEA21A1E58DE6B00312924 /* PanViewController.m */,
+				A2AEA21C1E58DE8700312924 /* TapViewController.h */,
+				A2AEA21D1E58DE8700312924 /* TapViewController.m */,
 				A2AEA2001E58D98B00312924 /* Assets.xcassets */,
 				A2AEA2021E58D98B00312924 /* LaunchScreen.storyboard */,
 				A2AEA2051E58D98B00312924 /* Info.plist */,
@@ -208,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AEA21B1E58DE6B00312924 /* PanViewController.m in Sources */,
 				A2AEA1F91E58D98B00312924 /* AppDelegate.m in Sources */,
+				A2AEA21E1E58DE8700312924 /* TapViewController.m in Sources */,
 				A2AEA1F61E58D98B00312924 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
